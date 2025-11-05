@@ -1,3 +1,58 @@
+/* ---------- Admin Panel Buttons ---------- */
+.edit-btn,
+.delete-btn,
+.remove-btn {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.4rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button (Orange) */
+.edit-btn {
+  background-color: #e2a03f;
+  color: #fff8e7;
+}
+.edit-btn:hover {
+  background-color: #c8872f;
+}
+
+/* Delete Button (Red) */
+.delete-btn {
+  background-color: #d9534f;
+  color: #fff8e7;
+}
+.delete-btn:hover {
+  background-color: #b52b2b;
+}
+
+/* Remove Button (Gray/Brown) */
+.remove-btn {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  margin-top: 0.4rem;
+}
+.remove-btn:hover {
+  background-color: #8b5a0f;
+}
+
+/* Better spacing for admin list items */
+#admin-menu-list li,
+#admin-queue-list li {
+  background-color: #fff8e7;
+  padding: 0.6rem;
+  margin: 0.4rem 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 /* ---------- Base Styles ---------- */
 * {
   margin: 0;
@@ -268,4 +323,18 @@ textarea {
 button.btn-primary {
   border: none;
   cursor: pointer;
+}
+.remove-btn {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+.remove-btn:hover {
+  background-color: #8b5a0f;
 }
