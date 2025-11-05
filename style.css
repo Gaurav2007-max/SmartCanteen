@@ -1,0 +1,340 @@
+/* ---------- Admin Panel Buttons ---------- */
+.edit-btn,
+.delete-btn,
+.remove-btn {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.4rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button (Orange) */
+.edit-btn {
+  background-color: #e2a03f;
+  color: #fff8e7;
+}
+.edit-btn:hover {
+  background-color: #c8872f;
+}
+
+/* Delete Button (Red) */
+.delete-btn {
+  background-color: #d9534f;
+  color: #fff8e7;
+}
+.delete-btn:hover {
+  background-color: #b52b2b;
+}
+
+/* Remove Button (Gray/Brown) */
+.remove-btn {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  margin-top: 0.4rem;
+}
+.remove-btn:hover {
+  background-color: #8b5a0f;
+}
+
+/* Better spacing for admin list items */
+#admin-menu-list li,
+#admin-queue-list li {
+  background-color: #fff8e7;
+  padding: 0.6rem;
+  margin: 0.4rem 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ---------- Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5e8c7;
+  color: #4b2e05;
+  line-height: 1.6;
+}
+
+/* ---------- Navbar ---------- */
+nav {
+  background-color: #fff8e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b2e05;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #8b5a0f;
+}
+
+.btn-primary {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #8b5a0f;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background: linear-gradient(135deg, #fff8e7 0%, #f5e8c7 100%);
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Menu Section ---------- */
+.menu-section {
+  background: #fff8e7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.category {
+  background: #f5e8c7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.category h3 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4b2e05;
+  display: inline-block;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.menu-item-name {
+  font-weight: 500;
+}
+
+.menu-item-price {
+  color: #8b5a0f;
+}
+
+.menu-item button {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.menu-item button:hover {
+  background-color: #8b5a0f;
+}
+
+/* ---------- Cart Section ---------- */
+.order-section {
+  background: #fff8e7;
+  margin: 4rem 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.order-section h2 {
+  margin-bottom: 1rem;
+}
+
+#cart-list {
+  list-style: none;
+  margin: 1rem 0;
+  text-align: left;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+#cart-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5d8b7;
+}
+
+#cart-total {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #8b5a0f;
+}
+
+button#place-order {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#place-order:hover {
+  background-color: #8b5a0f;
+}
+
+/* ---------- Queue Section ---------- */
+.queue-section {
+  background: #f5e8c7;
+  margin: 4rem 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.queue-section h2 {
+  margin-bottom: 1rem;
+}
+
+#queue-list {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+#queue-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e5d8b7;
+}
+
+/* ---------- About Section ---------- */
+.about-section {
+  background: #f5e8c7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #fff8e7;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  text-align: left;
+}
+
+/* ---------- Contact Section ---------- */
+.contact-section {
+  background: #fff8e7;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-form {
+  background: #f5e8c7;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #e5d8b7;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+button.btn-primary {
+  border: none;
+  cursor: pointer;
+}
+.remove-btn {
+  background-color: #4b2e05;
+  color: #fff8e7;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+.remove-btn:hover {
+  background-color: #8b5a0f;
+}
