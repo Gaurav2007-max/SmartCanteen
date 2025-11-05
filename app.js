@@ -213,9 +213,17 @@ function loadAdminData() {
       `;
       const removeBtn = document.createElement("button");
       removeBtn.textContent = "Remove";
+      removeBtn.style.backgroundColor = "#4b2e05";
+      removeBtn.style.color = "white";
+      removeBtn.style.border = "none";
+      removeBtn.style.borderRadius = "6px";
+      removeBtn.style.padding = "8px 14px";
+      removeBtn.style.cursor = "pointer";
+      removeBtn.textContent = "Remove";
       removeBtn.addEventListener("click", () => remove(ref(db, "orders/" + key)));
       li.appendChild(removeBtn);
       adminQueueList.appendChild(li);
     });
   });
 }
+
