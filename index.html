@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Canteen - Order Smarter, Eat Faster</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Smart Canteen</div>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#queue">Queue</a></li>
+      <li><a href="#admin-panel" class="btn-primary">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Smart Canteen – Order Smarter, Eat Faster!</h1>
+      <p>Digital canteen experience for your campus. Order online and skip the queue.</p>
+      <a href="#menu" class="btn-primary">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section" id="menu">
+    <h2>Our Menu</h2>
+    <div id="menu-grid" class="menu-grid"></div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="order" class="order-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-list"></ul>
+    <p>Total: ₹<span id="cart-total">0</span></p>
+    <button id="place-order">Place Order</button>
+  </section>
+
+  <!-- Queue Section -->
+  <section class="queue-section" id="queue">
+    <h2>Live Order Queue</h2>
+    <ul id="queue-list"></ul>
+  </section>
+
+  <!-- Admin Panel -->
+  <section id="admin-panel" class="queue-section">
+    <h2>Canteen Admin Panel</h2>
+
+    <!-- Login -->
+    <div class="form-group" id="admin-login-form">
+      <input type="password" id="admin-pass" placeholder="Enter admin password" />
+      <button id="admin-login" class="btn-primary">Login</button>
+    </div>
+
+    <!-- Admin Controls -->
+    <div id="admin-controls" style="display:none;">
+      <h3>Manage Menu</h3>
+      <div class="form-group">
+        <input type="text" id="item-name" placeholder="Item name" />
+        <input type="number" id="item-price" placeholder="Price ₹" />
+        <input type="text" id="item-category" placeholder="Category (e.g. Snacks)" />
+        <button id="add-item" class="btn-primary">Add Item</button>
+      </div>
+
+      <h3>Menu Items</h3>
+      <ul id="admin-menu-list"></ul>
+
+      <h3>Active Orders</h3>
+      <ul id="admin-queue-list"></ul>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
